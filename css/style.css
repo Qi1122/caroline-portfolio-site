@@ -197,12 +197,10 @@ a.active {
     padding-right: 7%;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    /* color: white; */
+    color: var(--title-color, white); /* Default color (white) */
     font-weight: 400;
     font-size: 0.8em;
     letter-spacing: 0.2em;
-    /* Default color (white) */
-    color: var(--title-color, white);
 }
 
 .black {
@@ -292,7 +290,14 @@ a:hover {
     width: 100%;
 }
 
-
+.tenderfleshimage {
+    display: flex;
+    justify-content: center;      /* 水平居中所有图片 */
+    align-items: center;          /* 如果你要垂直居中，也可以保留这行 */
+    gap: 40px;                    /* 图片之间的间距 */
+    flex-wrap: wrap;              /* 如果图片太多，允许换行 */
+    padding: 20px 0;              /* 上下内边距 */
+}
 
 
 
