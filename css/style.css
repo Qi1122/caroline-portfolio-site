@@ -299,6 +299,43 @@ a:hover {
     padding: 20px 0;              /* 上下内边距 */
 }
 
+.thepresenceofseencontainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    /* 移除 column-count */
+}
+
+.thepresenceofseenimage {
+    display: flex;
+    flex-direction: column;      /* 垂直排列每张图片 */
+    align-items: center;         /* 水平居中每张图片 */
+    justify-content: center;
+    gap: 40px;                   /* 每张图片之间的垂直间距 */
+    width: 100%;
+    /*padding: 20px 0;*/
+    padding-bottom: 5%;
+}
+
+.thepresenceofseenimage img {
+    width: 100%;            /* 默认宽度随容器缩放 */
+    max-width: 800px;       /* 最大宽度限制 */
+    height: auto;           /* 保持纵横比 */
+    display: block;
+}
+
+/*.ipscontainerver1 {*/
+/*    display: flex;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    padding-bottom: 5%;*/
+/*}*/
+/*.ipscontainerver1 img {*/
+/*    width: 100%;*/
+/*}*/
+
 
 
 
@@ -533,7 +570,7 @@ div.rightfooter:hover p {
 /* PROJECTS PAGE */
 
 .projheader {
-    height: 100vh;
+    height: 150vh;
     background-image: url('../img/resized_sunflower-project.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -550,7 +587,8 @@ div.rightfooter:hover p {
     padding: 0%;
     height: 50%;
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
     top: 25%;
     list-style: none;
     display: flex;
